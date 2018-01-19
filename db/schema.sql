@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS burgers_db;
+
 CREATE DATABASE burgers_db;
 USE burgers_db;
 
@@ -8,3 +10,10 @@ CREATE TABLE burgers
 	devoured BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
+
+INSERT INTO burgers (burger_name) VALUES ('Single-Single');
+INSERT INTO burgers (burger_name) VALUES ('Double-Double');
+INSERT INTO burgers (burger_name) VALUES ('Triple-Triple');
+INSERT INTO burgers (burger_name) VALUES ('The Quad');
+
+SELECT * FROM burgers;
