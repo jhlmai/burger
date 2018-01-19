@@ -11,9 +11,9 @@ CREATE TABLE burgers
 	PRIMARY KEY (id)
 );
 
-INSERT INTO burgers (burger_name) VALUES ('Single-Single');
-INSERT INTO burgers (burger_name) VALUES ('Double-Double');
-INSERT INTO burgers (burger_name) VALUES ('Triple-Triple');
-INSERT INTO burgers (burger_name) VALUES ('The Quad');
+INSERT INTO burgers (burger_name, devoured) VALUES ('Single-Single', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Double-Double', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Triple-Triple', false);
+INSERT INTO burgers (burger_name, devoured) VALUES ('The Quad', false);
 
 SELECT * FROM burgers;
